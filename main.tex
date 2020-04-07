@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is a general template file for the LaTeX package SVJour3
+% for Springer journals.          Springer Heidelberg 2010/09/16
+%
+% Copy it to a new file with a new name and use it as the basis
+% for your article. Delete % signs as needed.
+%
+% This template includes a few options for different layouts and
+% content for various journals. Please consult a previous issue of
+% your journal as needed.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\RequirePackage{fix-cm}
+%
+\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+%\documentclass[smallextended,draft]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{todonotes}
+\usepackage{booktabs}
+\usepackage{array}
+%\usepackage{colortbl}
+%\usepackage{pgfplotstable}
+\usepackage{hyperref}
+
+\usepackage[OT4]{fontenc}
+
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+
+\journalname{SoSyM}
+
+\begin{document}
+
+\title{Guest editorial to the special section on MODELS 2018}
+
+%\titlerunning{Short form of title}        % if too long for running head
+
+\author{Andrzej W\k{a}sowski, Richard F. Paige and \O ystein Haugen}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{
+Andrzej W\k{a}sowski\at IT University \\
+Copehagen, Denmark \\
+\email{wasowski@itu.dk}
+\and
+Richard F. Paige\at McMaster University and the University of York \\
+Hamilton, Canada and York, United Kingdom\\
+\email{paigeri@mcmaster.ca}
+\and
+\O ystein Haugen\at \O stfold University College\\
+Halden, Norway \\
+\email{oystein.haugen@hiof.no}
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
+\maketitle
+
+\section{Introduction}
+
+The MODELS conference series is the premier event for model-based software and systems engineering. The conference
+has traditionally covered all aspects of modeling, including languages and methods and tools and applications. In recent years,
+the papers published at the conference have reflected the growing maturity of research and development in the field, with increased
+emphasis on applications, industrial use of modeling, tools, and new and dynamic application domains. 
+
+MODELS 2018, the twenty-first event in the series, took place in Copenhagen, Denmark, from 14-19 October 2018. It was jointly sponsored
+by the ACM and IEEE. A total of 139 papers were submitted, with 101 papers submitted to the 'Foundations' Track (of which 29 were
+accepted) and 38 to the 'Practice and Innovation' track (of which 13 were accepted). Together, both tracks had an acceptance rate of
+30\%.
+
+It has become a tradition that authors of the best papers at each MODELS conference are invited to submit revised and extended versions of their papers for publication in a special section or issue SoSyM. The selection of these papers is based on input from the Program Committee and on the response to the papers at the conference.
+This special section presents the five articles that resulted from this invitation. Each article was subject to the full SoSyM review cycle and authors received anonymous feedback in two rounds of reviewing from three reviewers who are experts in the field. As a result, each article has been thoroughly revised and substantially extended when compared against its conference version. The authors took the opportunity to present additional results (experiments, case studies), improvements to tools, and insights
+that arose from feedback obtained at the conference itself.
+
+\section{Selected papers}
+The selected papers span a set of topics, ranging from foundational aspects of modeling and modeling languages, to modeling
+for hardware and safety, to issues of scale and scalability. This reflects the diversity of presentation at the conference itself, where
+attendees saw presentations on diverse application domains and fundamental research results.
+
+The first article, \textit{Scalable model views over heterogeneous modeling technologies and resources}, is by 
+Hugo Bruneliere, Florent Marchand de Kerchove, Gwendal Daniel, Sina Madani, Dimitris Kolovos and Jordi Cabot. It presents
+a general solution to efficiently support scalable model views over heterogeneous modeling resources, where the resources may
+be handled via different modeling technologies. It also shows how queries on such model
+views can be executed efficiently by benefiting from the optimization of the
+different model technologies and underlying persistence backends. 
+
+The second article, \textit{Extending single- to multi-variant model transformations by trace-based propagation of variability annotations}, by
+Bernhard Westfechtel and Sandra Greiner, presents a novel approach to extending model transformations to multiple variants. The approach is 
+based on the use of propagating variation
+annotations that are generated from trace information from executing the single-variant transformation. The conference paper was awarded the \textit{Springer
+Best Paper Award} at MODELS 2018.
+
+The third paper, \textit{Model-based safety assessment with SysML and component fault trees: application and lessons learned}, by Peter Munk and
+Arne Nordmann, demonstrates an approach for augmenting SysML models with component fault trees in order to support
+fault tree analysis and failure mode and effects analysis. The integration is built atop both internal block diagrams as well as activity
+diagrams, and is demonstrated on case studies including for power steering and boost recuperation systems.
+
+The fourth article, \textit{Hardware architecture exploration: automatic exploration of distributed automotive hardware
+architectures} by Johannes Eder, Sebastian Voss, Andreas Bayha, Alexandru Ipatiov and Maged Khalil, presents an approach capable of 
+automatically generating automotive electric/electronic architectures. The paper introduces dedicated metamodels as well as a language for formally
+describing hardware architecture exploration problems, as well as exploration approaches based on SMT. 
+
+The final article, \textit{Connecting software build with maintaining consistency between models: towards sound, optimal, and flexible building from megamodels}
+by Perdita Stevens, explains the connection between megamodel consistency and software build, and proposes the use of an orientation model for making
+significant decisions explicit with respect to megamodel consistency. The ideas are reflected in the \textit{pluto} formalized build system.
+
+\section*{Acknowledgements}
+We would like to thank the Editors-In-Chief of SoSyM, Bernhard Rumpe and Jeff Gray for their support of the successful collaboration between MODELS and SoSyM. 
+We would also like to gratefully acknowledge the hard work of the referees who produced detailed, insightful and constructive reviews that significantly improved the
+submissions. We also thank Martin Schindler and Huseyin Ergin from the SoSyM editorial office who have provided valuable assistance with the review process. Last but not least, we thank the authors for putting in a substantial amount of work (and enthusiasm) in revising and extending their papers.
+\end{document}
+% end of file template.tex
+
